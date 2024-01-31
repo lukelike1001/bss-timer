@@ -4,7 +4,7 @@
     "description": "An Interactive Timer for Bee Swarm Simulator",
     "version": "1.0",
     "action": {
-      "default_popup": "pages/home.html",
+      "default_popup": "pages/index.html",
       "default_icon": "images/icon.png"
     }
 }
