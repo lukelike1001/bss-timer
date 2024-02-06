@@ -2717,17 +2717,20 @@ input, select, textarea {
 		color: #555 !important;
 		cursor: pointer;
 		display: inline-block;
-		font-size: 0.9em;
 		font-weight: 400;
 		height: 2.75em;
 		letter-spacing: 0.125em;
 		line-height: 2.75em;
 		padding: 0 2em;
-		text-align: center;
 		text-decoration: none;
 		text-indent: 0.125em;
 		text-transform: uppercase;
 		white-space: nowrap;
+
+		/* Manually Edited: */
+		font-size: 0.7em;
+		text-align: left;
+		width: 80px;
 	}
 
 		input[type="submit"]:hover,
