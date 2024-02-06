@@ -14,11 +14,13 @@ function setTimer(minute, second, string_id) {
     function runTimer() {
 
         // display the current time
-        document.getElementById(string_id).text_content = '${minute}:${second} ⏰';
+        let formatted_second = String(second).padStart(2, '0');
+        document.getElementById(string_id).text_content = '${minute}:${formatted_second} ⏰';
 
         // if the time is 00:00, stop the timer
         // otherwise, decrement seconds and minutes as needed
         if ((minute === 0) && (second === 0)) {
+            alert('Timer expired!');
             clearInterval(timerInterval);
         } else if (second === 0) {
             minute -= 1;
