@@ -2662,7 +2662,7 @@ input, select, textarea {
 
 		table thead {
 			border-bottom: solid 1px rgb(255, 101, 101);
-
+			vertical-align: middle;
 		}
 
 		table tfoot {
