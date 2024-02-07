@@ -3,6 +3,10 @@
     "name": "BSS Timer",
     "description": "An Interactive Timer for Bee Swarm Simulator",
     "version": "1.0",
+    "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self';",
+      "sandbox": "sandbox allow-scripts allow-forms allow-popups allow-modals; script-src 'self' 'unsafe-inline' 'unsafe-eval'; child-src 'self';"
+    },  
     "action": {
       "default_popup": "pages/index.html",
       "default_icon": "images/icon.png"
