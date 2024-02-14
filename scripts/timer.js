@@ -24,7 +24,7 @@ function setTimer(minute, second, string_id) {
         // otherwise, decrement seconds and minutes as needed
         if ((minute === 0) && (second === 0)) {
             document.getElementById(string_id).innerText = format_time(orig_minute, orig_second);
-            alert('Timer expired!');
+            // alert('Timer expired!');
             clearInterval(timerInterval);
         } else if (second === 0) {
             minute -= 1;
@@ -46,7 +46,7 @@ function setTimer(minute, second, string_id) {
 // create event listeners for all the button IDs
 // use arrow functions to prevent automatic calls upon loading the application
 document.getElementById("ladybug").addEventListener("click", () => {
-    setTimer(5, 0, "ladybug");
+    setTimer(0, 2, "ladybug");
 });
 document.getElementById("rhino_beetle").addEventListener("click", () => {
     setTimer(5, 0, "rhino_beetle");

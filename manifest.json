@@ -10,5 +10,6 @@
     "action": {
       "default_popup": "pages/index.html",
       "default_icon": "images/icon.png"
-    }
+    },
+    "permissions": ["notifications"]
 }
