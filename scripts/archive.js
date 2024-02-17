@@ -28,3 +28,8 @@ class TimerButton {
         });
     }
 }
+
+// if ((typeof minute !== 'number') || (typeof second !== 'number') || (typeof string_id !== 'string')) {
+    // console.log('Either the time parameters aren\'t numbers or the string_id isn\t a string.');
+    // return NaN;
+// }
