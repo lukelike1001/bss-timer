@@ -59,7 +59,7 @@ for (let key in keys) {
 // create event listeners for all the button IDs
 // use arrow functions to prevent automatic calls upon loading the application
 document.getElementById("ladybug").addEventListener("click", () => {
-    let minute = 5, second = 0;
+    let minute = 0, second = 10;
     let message = 'The ladybugs have respawned! 🔴';
     setTimer(minute, second, "ladybug", message);
     document.getElementById("ladybug").innerText = "05:00 ⏰";

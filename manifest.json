@@ -6,7 +6,11 @@
     "content_security_policy": {
       "extension_pages": "script-src 'self'; object-src 'self';",
       "sandbox": "sandbox allow-scripts allow-forms allow-popups allow-modals; script-src 'self' 'unsafe-inline' 'unsafe-eval'; child-src 'self';"
-    },  
+    },
+    "background": {
+      "service_worker": "scripts/timer.js",
+      "type": "module"
+    },
     "action": {
       "default_popup": "pages/index.html",
       "default_icon": "images/icon.png"
