@@ -8,32 +8,9 @@ function setTimer(minute, second, string_id, message) {
         showNotification("Timer canceled! 🛑");
     } else {
         activeMap[string_id] = true;
-        timerMap[string_id] = setInterval(runTimer, 1000);
-    }
-
-    function runTimer() {
-
-        // display the current time
-        document.getElementById(string_id).innerText = format_time(minute, second);
-
-        // if the time is 00:00, stop the timer
-        // otherwise, decrement seconds and minutes as needed
-        if ((minute === 0) && (second === 0)) {
-            clearInterval(timerMap[string_id]);
-            showNotification(message);
-        } else if (second === 0) {
-            minute -= 1;
-            second += 59;
-        } else {
-            second -= 1;
-        }
-    }
-
-    function format_time(minute, second) {
-        let formatted_minute = String(minute).padStart(2, '0');
-        let formatted_second = String(second).padStart(2, '0');
-        let msg = formatted_minute + ':' + formatted_second + '⏰';
-        return msg;
+        timerMap[string_id] = bgpage.setAlarm((minute*60 + second) * 60000);
+        clearInterval(timerMap[string_id]);
+        showNotification(message);
     }
 
     function showNotification(message) {
